@@ -5,6 +5,8 @@ import * as React from "react";
 import useConfig from "./components/useConfig";
 import logo from "./logo.svg";
 
+import RandomRest from "./components/randomRest";
+
 /**
  * Our Web Application
  */
@@ -19,6 +21,7 @@ export default function App() {
       <p className="App-intro">
         To get started, edit <code>src/App.tsx</code> and save to reload.
       </p>
+      <RandomRest/>
     </div>
   );
 }
