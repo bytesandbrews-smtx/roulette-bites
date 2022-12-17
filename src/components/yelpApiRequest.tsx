@@ -4,8 +4,10 @@ import axios from 'axios';
 const YelpAPIRequest = () => {
 const config = {
     headers: {
-      "Access-Control-Allow-Origin" : "*",
-      "Authorization" : "Bearer 9nntrke6fVf6C4oEJzpaF2W419UbQR2CojDf_KDnRfKvjIAqwm3aKvifqhVciLrNP72xUiZDh52CVetmBXqbAt_7zO0PiD8PF00RCKRQT5gNaNU0mqnu3FNjZZucY3Yx"
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      Authorization:
+        "Bearer 9nntrke6fVf6C4oEJzpaF2W419UbQR2CojDf_KDnRfKvjIAqwm3aKvifqhVciLrNP72xUiZDh52CVetmBXqbAt_7zO0PiD8PF00RCKRQT5gNaNU0mqnu3FNjZZucY3Yx",
     },
     params: {
       term: "restaurants",
