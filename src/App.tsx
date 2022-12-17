@@ -6,6 +6,7 @@ import useConfig from "./components/useConfig";
 import logo from "./logo.svg";
 
 import RandomRest from "./components/randomRest";
+import YelpAPIRequest from "./components/yelpApiRequest";
 
 /**
  * Our Web Application
@@ -22,6 +23,8 @@ export default function App() {
         To get started, edit <code>src/App.tsx</code> and save to reload.
       </p>
       <RandomRest/>
+      <YelpAPIRequest/>
+
     </div>
   );
 }

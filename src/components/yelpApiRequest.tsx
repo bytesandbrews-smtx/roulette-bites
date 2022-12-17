@@ -1,9 +1,11 @@
+import React, { Component } from 'react';
 import axios from 'axios';
 
+const YelpAPIRequest = () => {
 const config = {
     headers: {
-      Authorization:
-        "Bearer 9nntrke6fVf6C4oEJzpaF2W419UbQR2CojDf_KDnRfKvjIAqwm3aKvifqhVciLrNP72xUiZDh52CVetmBXqbAt_7zO0PiD8PF00RCKRQT5gNaNU0mqnu3FNjZZucY3Yx",
+      "Access-Control-Allow-Origin" : "*",
+      "Authorization" : "Bearer 9nntrke6fVf6C4oEJzpaF2W419UbQR2CojDf_KDnRfKvjIAqwm3aKvifqhVciLrNP72xUiZDh52CVetmBXqbAt_7zO0PiD8PF00RCKRQT5gNaNU0mqnu3FNjZZucY3Yx"
     },
     params: {
       term: "restaurants",
@@ -20,3 +22,7 @@ const config = {
     console.log(response); //These are the results sent back from the API!
   });
 
+  return (<p>DONE!</p>);
+}
+
+export default YelpAPIRequest
