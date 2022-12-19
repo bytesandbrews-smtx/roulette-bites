@@ -4,10 +4,9 @@ import axios from 'axios';
 const YelpGraphQLQuery = () => {
 	const options = {
 		method: 'POST',
-		url: 'https://api.yelp.com/v3/graphql',
+		url: 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/graphql',
 		headers: {
-			"Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
+			"content-type": "application/json",
       "Authorization": "Bearer 9nntrke6fVf6C4oEJzpaF2W419UbQR2CojDf_KDnRfKvjIAqwm3aKvifqhVciLrNP72xUiZDh52CVetmBXqbAt_7zO0PiD8PF00RCKRQT5gNaNU0mqnu3FNjZZucY3Yx"
 		},
 		data: {

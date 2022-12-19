@@ -8,6 +8,7 @@ import logo from "./logo.svg";
 import RandomRest from "./components/randomRest";
 import YelpAPIRequest from "./components/yelpApiRequest";
 import YelpGraphQLQuery from "./components/yelpGraphQLQuery";
+import YelpApolloQuery from "./components/yelpApolloQuery";
 
 /**
  * Our Web Application
@@ -24,7 +25,7 @@ export default function App() {
         To get started, edit <code>src/App.tsx</code> and save to reload.
       </p>
       <RandomRest/>
-      <YelpGraphQLQuery/>
+      <YelpAPIRequest/>
 
     </div>
   );
