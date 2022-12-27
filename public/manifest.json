@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Roulette Bites",
+  "name": "Roulette Bites pick a place to eat!",
   "icons": [
     {
       "src": "favicon.ico",
