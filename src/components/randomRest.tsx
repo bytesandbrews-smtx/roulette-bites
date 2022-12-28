@@ -1,19 +1,12 @@
 import React, { Component, useState } from 'react';
 
-export default function RandomRest() {
-
-  const rests = [
-      "Stellar Coffee Company",
-      "Root Cellar",
-      "Taco Bell",
-      "Cook at home"
-  ];
+export default function RandomRest({restData}) {
 
   const [R, setR] = useState("");
   
   function getRandomRest() {
-      const random = Math.floor(Math.random() * rests.length);
-      setR(rests[random]);
+      const random = Math.floor(Math.random() * restData.length);
+      setR(restData[random].name);
   }
   
   return(

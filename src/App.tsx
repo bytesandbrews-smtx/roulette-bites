@@ -3,7 +3,7 @@ import "./App.css";
 import React, { useState } from "react";
 
 import useConfig from "./components/useConfig";
-import restData from "../public/restaurants.json";
+import restData from "./restaurants.json";
 
 import RandomRest from "./components/randomRest";
 //import YelpAPIRequest from "./components/yelpApiRequest";
@@ -15,8 +15,6 @@ import RandomRest from "./components/randomRest";
  */
 export default function App() {
   const config = useConfig();
-
-  //console.log(restData);
   
   return (
     <div className="App">
@@ -24,7 +22,7 @@ export default function App() {
         <h1 className="App-title">Welcome to {config.app.TITLE}</h1>
       </header>
       <div className="App-body">
-        <RandomRest/>
+        <RandomRest restData={restData}/>
       </div>
     </div>
   );
