@@ -32,7 +32,7 @@ export default function RandomRest({restData}) {
         <p>You should go to:</p>
         <h2>{R.name}</h2>
         <p>{R.price ? R.price : '$'}</p>
-        <img src={R.image_url}></img>
+        <img src={R.image_url} width="400px" height="auto"></img>
       </div>
     )
 }
